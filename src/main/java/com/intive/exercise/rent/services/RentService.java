@@ -4,6 +4,8 @@ import com.intive.exercise.rent.models.Rent;
 import com.intive.exercise.rent.models.RentType;
 import com.intive.exercise.user.User;
 
+import java.util.List;
+
 public interface RentService {
 
     /**
@@ -14,5 +16,5 @@ public interface RentService {
      * @return
      * @throws Exception
      */
-    Rent createRent(User user, RentType rentType) throws Exception;
+    Rent createRent(User user, RentType rentType, List<Rent> list) throws Exception;
 }
