@@ -27,7 +27,6 @@ public class ExerciseApplicationTests {
 
 	private RentService rentService;
 
-
 	@Before
 	public void init() {
 		rentService = new RentServiceImpl();
