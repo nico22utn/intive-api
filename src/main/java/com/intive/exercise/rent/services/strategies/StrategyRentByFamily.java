@@ -10,8 +10,8 @@ public class StrategyRentByFamily implements StrategyRent {
         Double amounts = 0.0;
         if ( checkIfRentsHasSufficient(list)) {
             amounts = list.stream().mapToDouble( Rent::getAmount).sum();
+            amounts = amounts * 0.3;
         }
-        amounts = amounts * 0.3;
         return amounts;
     }
 
